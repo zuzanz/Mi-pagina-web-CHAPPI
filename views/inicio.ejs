@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+    <header class="menu-superior">
+  <div class="logo">CHAPPI</div>
+  <nav>
+    <ul>
+      <li><a href="/productos">Ver Productos</a></li>
+      <li><a href="/contacto">Contacto</a></li>
+      <li><a href="/login">Iniciar Sesión</a></li>
+      <li><a href="/registro">Usuario Nuevo</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="bienvenida">
+  <h1>Bienvenido a la tienda virtual</h1>
+  <p>Explora nuestros productos y encontrá lo que necesitás</p>
+</section>
+<style>
+   /* Fondo completo */
+body {
+  background-image: url('/img/productos.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+}
+
+/* Menú superior */
+.menu-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(10, 10, 30, 0.7);
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #70ffdf;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #70ffdf;
+}
+
+/* Sección de bienvenida */
+.bienvenida {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.bienvenida h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000;
+}
+
+.bienvenida p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-shadow: 0 0 5px #000;
+}
+</style>
+</body>
+</html>

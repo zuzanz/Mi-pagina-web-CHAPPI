@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+<link rel="stylesheet" href="/css/estilos.css">
+<h1 class="pepe">CHAPPI</h1>
+<style>
+    .pepe{
+        color: aliceblue;
+    }
+</style>
+
+<div class="login-container">
+    <img src="/img/logo.jpg" alt="Logo de la empresa" class="login-logo"> <!-- Logo -->
+    <h2>Iniciar Sesión</h2>
+    <form action="/login" method="POST">
+        <label class="rene">Usuario:</label>
+        <input type="text" name="usuario" required>
+
+        <label class="punto">Contraseña:</label>
+        <input type="password" name="clave" required>
+
+        <button type="submit">Ingresar</button>
+    </form>
+</div>
+<style>
+    .rene{
+        color: #008080;
+    }
+</style>
+<style>
+    .punto{
+        color: #008080;
+    }
+</style>
+<style>
+body {
+    background-image: url('/img/mundo.jpg'); /* Ajusta el nombre de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fija el fondo al hacer scroll */
+    font-family: 'Roboto', sans-serif;
+}
+</style>
+<style>
+   .login-container {
+    width: 350px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se acomoden verticalmente */
+    align-items: center;
+}
+
+.login-container h2 {
+    color: #f9f7f7;
+}
+
+.login-logo {
+    width: 120px;
+    display: block;
+    margin: 0 auto 10px;
+    filter: drop-shadow(0px 0px 10px cyan);
+}
+
+.login-container input {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #f3eded;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(77, 81, 47); /* Asegura que el texto sea visible */
+    background-color: rgba(236, 230, 230, 0.7); /* Fondo oscuro semitransparente */
+}
+
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #00ffff;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.login-container button:hover {
+    background-color: #008080; /* Oscurecer al pasar el cursor */
+    box-shadow: 0px 0px 15px cyan; /* Resaltar con brillo */
+}
+</style>
+<style>
+  .login-logo {
+    width: 120px;
+    display: block;
+    margin: 0 auto 10px;
+    filter: drop-shadow(0px 0px 10px cyan);
+}
+</style>
+<style>
+    ::placeholder {
+    color: rgb(236, 233, 233); /* Color más visible */
+    }
+</style>
+</body>
+</html>

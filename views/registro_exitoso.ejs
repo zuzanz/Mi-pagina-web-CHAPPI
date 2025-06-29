@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="registro-ok">
+  <h1>¡Registro exitoso!</h1>
+  <p>Bienvenido/a, <%= nombre %>. Ahora podés iniciar sesión.</p>
+  <a href="/login">Iniciar sesión</a>
+</div>
+<style>
+   .registro-ok {
+  max-width: 600px;
+  margin: 80px auto;
+  background: rgba(30, 30, 50, 0.9);
+  padding: 40px;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.registro-ok a {
+  display: inline-block;
+  margin-top: 20px;
+  background: #5f44f5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.registro-ok a:hover {
+  background: #4332cc;
+}
+</style>
+<style>
+  body {
+  background-image: url('/img/retrojuegos.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+</style>
+</body>
+</html>

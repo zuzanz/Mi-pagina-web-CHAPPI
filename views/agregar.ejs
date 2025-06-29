@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Productos</title>
+</head>
+<body>
+    <h2 class="arroz">Registrar Nuevo Producto</h2>
+    <style>
+        .arroz{
+            color: aliceblue;
+        }
+    </style>
+
+<form class="form-producto" action="/agregar-producto" method="POST" enctype="multipart/form-data">
+    <div class="campo">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+    </div>
+
+    <div class="campo">
+        <label>Descripción:</label>
+        <textarea name="descripcion" required></textarea>
+    </div>
+
+    <div class="campo">
+        <label>Precio:</label>
+        <input type="number" name="precio" required>
+    </div>
+
+    <div class="campo">
+        <label>URL Imagen (Opcional):</label>
+        <input type="text" name="imagen_url">
+    </div>
+    <button type="submit">Guardar Producto</button>
+</form>
+<style>
+body {
+    background-image: url('/img/gatopc.jpg'); /* Cambia por la imagen que tú elijas */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+}
+</style>
+
+<style>
+    .form-producto {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 80px auto;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    color: white;
+}
+
+.form-producto label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.form-producto input,
+.form-producto textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.form-producto button {
+    background: #00ffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-producto button:hover {
+    background: #008080;
+    box-shadow: 0 0 10px cyan;
+}
+
+.form-producto {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+
+   
+</form>
+</body>
+</html>

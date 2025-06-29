@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>Contacto</title>
+</head>
+<body>
+ <div class="form-container">
+  <h2>Contáctanos</h2>
+  <form action="/enviar_mensaje" method="POST">
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    </div>
+
+    <div class="form-group">
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    </div>
+
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</div>
+<style>
+    .form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #70ffdf;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #2e2e3e;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  background-color: #393956;
+  box-shadow: 0 0 5px #5f44f5;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5f44f5;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4332cc;
+}
+</style>
+<style>
+  body {
+  background-image: url('/img/fondo.jpg'); /* Ruta dentro de /public/img */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.form-container {
+  background-color: rgba(30, 30, 47, 0.9); /* Fondo opaco con transparencia */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+</style>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar</title>
+</head>
+<body>
+    <h2>Modificar Producto</h2>
+
+<ul class="modificar-lista">
+    <% productos.forEach(producto => { %>
+        <li>
+            <div class="modificar-card">
+                <form action="/modificar-producto/<%= producto.id %>" method="POST" class="form-producto">
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre" value="<%= producto.nombre %>" required>
+
+                    <label>Descripción:</label>
+                    <textarea name="descripcion" required><%= producto.descripcion %></textarea>
+
+                    <label>Precio:</label>
+                    <input type="number" name="precio" value="<%= producto.precio %>" required>
+
+                    <label>Imagen URL:</label>
+                    <input type="text" name="imagen_url" value="<%= producto.imagen_url %>">
+
+                    <button type="submit">Modificar</button>
+                </form>
+            </div>
+        </li>
+    <% }) %>
+</ul>
+<style>
+    .form-producto {
+    width: 400px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 05px;
+    box-shadow: 0 0 15px cyan;
+    text-align: center;
+    margin: auto; /* Centrar en la pantalla */
+    display: flex;
+    flex-direction: column; /* Asegurar que los elementos estén en columna */
+    align-items: center;
+}
+</style>
+<style>
+    .form-producto input,
+.form-producto textarea {
+    width: 100%; /* Ajustar el tamaño dentro del formulario */
+    padding: 15px;
+    border-radius: 10px;
+    border: 5px solid #ccc;
+    text-align: left;
+    margin-bottom: 20px; /* Espacio entre campos */
+}
+</style>
+<style>
+    .form-producto label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+</style>
+<style>
+    ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px cyan;
+    color: white;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+button {
+    background: #00ffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #008080;
+    box-shadow: 0px 0px 10px cyan;
+}
+</style>
+<style>
+    .modificar-lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.modificar-card {
+    width: 400px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px cyan;
+    color: white;
+}
+
+.form-producto label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.form-producto input,
+.form-producto textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.form-producto button {
+    width: 100%;
+    padding: 10px;
+    background: #00ffff;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.form-producto button:hover {
+    background: #008080;
+    box-shadow: 0 0 10px cyan;
+}
+</style>
+<style>
+    body {
+    background-image: url('/img/lobby.jpg'); /* Asegúrate de que la imagen esté en la carpeta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+    font-family: 'Arial', sans-serif;
+}
+</style>
+<style>
+    body {
+    background-color: #1a1a1a; /* Un color oscuro elegante */
+    color: white; /* Asegura que el texto sea visible */
+}
+</style>
+</body>
+</html>
