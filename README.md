@@ -3,7 +3,7 @@
 - login-system
 - user-authentication
 - web-development
-- ![Portada](https://raw.githubusercontent.com/zuzanz/Mi-pagina-web-CHAPPI/assets/img/logoCHAPPI.jpg)
+- ![Portada](assets/img/logoCHAPPI.jpg)
 ## 📸 Capturas de pantalla
 
 ### 🔐 Inicio de sesión
